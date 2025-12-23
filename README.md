@@ -72,7 +72,8 @@ graph TD
     CLOUD --> R1[dashboard-react<br/>api-node / python<br/>mqtt-bridge]
 
     %% Download Center (Linked from FW)
-    I01&R1 --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
+    I01 --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
+    R1 --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
 
     %% Styling
     style MAIN fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
