@@ -66,5 +66,3 @@ When the user asks for a feature (e.g., "Control motor based on temperature"):
 2. **Frontend Code**: Provide the React component (`.tsx`) to monitor/control it.
 3. **Explanation**: Briefly explain how the data flows via MQTT.
 ```
-
----
