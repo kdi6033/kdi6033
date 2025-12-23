@@ -66,11 +66,7 @@ graph TD
     MAIN --> DOCS["Documentation"]
 
     %% Firmware Branch
-    FW --> I01[i2r-01,02]
-    FW --> I02[i2r-02]
-    FW --> I03["i2r-03 (HMI)"]
-    FW --> I04[i2r-04]
-    FW --> I05["i2r-05 (AI)"]
+    FW --> I01[i2r-01<br/>i2r-02<br/>i2r-03<br/>i2r-04<br/>i2r-05]
     
     %% Cloud Branch
     CLOUD --> R1[dashboard-react]
