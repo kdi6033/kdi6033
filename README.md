@@ -4,8 +4,10 @@
 
 <div align="center">
   <h3>Physical AI 기반 IoT 통합 플랫폼</h3>
-  <a href="https://i2r.link">🌐 Official Website</a> | 
-  <a href="mailto:kdi6033@gmail.com">📧 Contact Me</a>
+  <div align="center">
+    <a href="https://i2r.link">🌐 공식 홈페이지</a> | 
+    <a href="mailto:kdi6033@gmail.com">📧 이메일 문의</a>
+  </div>
 </div>
 
 ---
