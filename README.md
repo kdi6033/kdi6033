@@ -32,7 +32,7 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 그리고 배포 시스템이 유기
 ```mermaid
 graph TD
     %% Main Platform
-    MAIN[i2r Platform<br/>github.com/kdi6033/i2r]:::mainRoot --> FW[i2r Board FW]
+    MAIN[i2r Platform<br/>github.com/kdi6033/i2r] --> FW[i2r Board FW]
     MAIN --> CLOUD[Server / Cloud]
     MAIN --> DOCS[Documentation]
 
@@ -53,11 +53,11 @@ graph TD
     DOCS --> D2[Common Rules]
 
     %% Download Center
-    FW -.--> DL[Download Center<br/>github.com/kdi6033/download]:::download
-
-    %% Styles
-    classDef mainRoot fill:#f96,stroke:#333,stroke-width:2px;
-    classDef download fill:#4CAF50,stroke:#333,color:white;
+    FW -.- DL[Download Center<br/>github.com/kdi6033/download]
+    
+    %% Styling
+    style MAIN fill:#f96,stroke:#333,stroke-width:2px
+    style DL fill:#4CAF50,stroke:#333,color:white
 ```
 
 ### 📂 리포지토리 구성 상세
