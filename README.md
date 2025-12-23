@@ -1,5 +1,3 @@
-# 김동일 | i2r – IoT PLC & Sensor Platform
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=220&section=header&text=i2r%20AI%20IoT%20Platform&fontSize=50&animation=fadeIn&fontAlignY=38&desc=Connecting%20Physical%20World%20to%20AI%20Cloud&descAlignY=55&descAlign=50" />
 </div>
