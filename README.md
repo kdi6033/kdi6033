@@ -24,18 +24,52 @@
 
 ---
 
-## 🗂️ i2r Platform Structure
 
-i2r 플랫폼은 기능별로 특화된 **독립 리포지토리(Series)** 로 구성되어 있습니다.
+## 🗂️ i2r 플랫폼 아키텍처 (System Architecture)
 
-| Series | Description (Repository) | Key Features |
+i2r 플랫폼은 펌웨어, 서버, 문서, 그리고 배포 시스템이 유기적으로 연결된 **통합 생태계**입니다.
+
+```mermaid
+graph TD
+    %% Main Platform
+    MAIN[i2r Platform<br/>github.com/kdi6033/i2r]:::mainRoot --> FW[i2r Board FW]
+    MAIN --> CLOUD[Server / Cloud]
+    MAIN --> DOCS[Documentation]
+
+    %% Firmware Branch
+    FW --> I01[i2r-01<br>Basic PLC]
+    FW --> I02[i2r-02<br>Automation]
+    FW --> I03[i2r-03<br>HMI System]
+    FW --> I04[i2r-04<br>Motor Control]
+    FW --> I05[i2r-05<br>AI / Robot]
+    
+    %% Cloud Branch
+    CLOUD --> R1[React Dashboard]
+    CLOUD --> A1[API Server]
+    CLOUD --> M1[MQTT Bridge]
+
+    %% Docs Branch
+    DOCS --> D1[Protocol Guide]
+    DOCS --> D2[Common Rules]
+
+    %% Download Center
+    FW -.--> DL[Download Center<br/>github.com/kdi6033/download]:::download
+
+    %% Styles
+    classDef mainRoot fill:#f96,stroke:#333,stroke-width:2px;
+    classDef download fill:#4CAF50,stroke:#333,color:white;
+```
+
+### 📂 리포지토리 구성 상세
+
+| **분류 (Category)** | **리포지토리 (Repositories)** | **설명 (Description)** |
 | :--- | :--- | :--- |
-| **[`i2r`](https://github.com/kdi6033/i2r)** | 🔰 **메인 플랫폼** | 전체 아키텍처, 통합 문서, 시작 가이드 |
-| **[`i2r-01`](https://github.com/kdi6033/i2r-01)** | ⚡ **Basic PLC** | 디지털 입출력(Digital I/O), 릴레이 제어 |
-| **[`i2r-02`](https://github.com/kdi6033/i2r-02)** | ⏱️ **Automation** | 타임 스케줄러, 자동 제어 로직, 타이머 |
-| **[`i2r-03`](https://github.com/kdi6033/i2r-03)** | 🖥️ **HMI System** | 임베디드 UI, LCD 터치 스크린, 작화 솔루션 |
-| **[`i2r-04`](https://github.com/kdi6033/i2r-04)** | ⚙️ **Actuator** | 모터(Step/Servo) 제어, 정밀 동작 구현 |
-| **[`i2r-05`](https://github.com/kdi6033/i2r-05)** | 🧠 **AI & Robot** | **ESP32-S3 기반**, On-Device AI, 로봇 제어 |
+| **펌웨어 FW** | `i2r-01` ~ `i2r-05` | 각 하드웨어 보드별 아두이노 펌웨어 소스 |
+| **서버 Cloud** | `react`, `node-red` | 웹 대시보드 및 백엔드 API (Node.js/Python) |
+| **배포 Center** | [`download`](https://github.com/kdi6033/download) | 컴파일된 바이너리(.bin) 및 OTA 업데이트 파일 |
+| **교육 Edu** | `teach-iot`, `plc`, `sensor` | 학생 실습용 예제 및 아두이노 센서 라이브러리 |
+
+---
 
 ---
 
@@ -66,3 +100,12 @@ When the user asks for a feature (e.g., "Control motor based on temperature"):
 2. **Frontend Code**: Provide the React component (`.tsx`) to monitor/control it.
 3. **Explanation**: Briefly explain how the data flows via MQTT.
 ```
+
+---
+
+## 📊 **GitHub Activity**
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kdi6033&show_icons=true&theme=radical&count_private=true" height="150" alt="kdi6033's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kdi6033&layout=compact&theme=radical" height="150" alt="Top Languages" />
+</div>
