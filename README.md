@@ -57,10 +57,10 @@ graph TD
 | **분류 (Category)** | **리포지토리 (Repositories)** | **설명 (Description)** |
 | :--- | :--- | :--- |
 | **IoT PLC** | [`i2r`](https://github.com/kdi6033/i2r) `i2r-02` ~ `i2r-04` | IoT PLC 펌웨어 소스 |
-| **펌웨어 FW** | `i2r-01`, `i2r-05` | 각 하드웨어 보드별 아두이노 펌웨어 소스 |
-| **서버 Cloud** | `react`, `node-red` | 웹 대시보드 및 백엔드 API (Node.js/Python) |
+| **펌웨어 FW** | [`i2r-01`](https://github.com/kdi6033/i2r-01), [`i2r-05`](https://github.com/kdi6033/i2r-05) | 각 하드웨어 보드별 아두이노 펌웨어 소스 |
+| **서버 Cloud** | [`react`](https://github.com/kdi6033/react), [`node-red`](https://github.com/kdi6033/node-red) | 웹 대시보드 및 백엔드 API (Node.js/Python) |
 | **배포 Center** | [`download`](https://github.com/kdi6033/download) | 컴파일된 바이너리(.bin) 및 OTA 업데이트 파일 |
-| **교육 Edu** | `teach-iot`, `plc`, `sensor` | 학생 실습용 예제 및 아두이노 센서 라이브러리 |
+| **교육 Edu** | [`teach-iot`](https://github.com/kdi6033/teach-iot), [`plc`](https://github.com/kdi6033/plc), [`sensor`](https://github.com/kdi6033/sensor) | 학생 실습용 예제 및 아두이노 센서 라이브러리 |
 
 ---
 
