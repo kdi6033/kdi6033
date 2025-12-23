@@ -92,12 +92,3 @@ When the user asks for a feature (e.g., "Control motor based on temperature"):
 2. **Frontend Code**: Provide the React component (`.tsx`) to monitor/control it.
 3. **Explanation**: Briefly explain how the data flows via MQTT.
 ```
-
----
-
-## 📊 **GitHub Activity**
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kdi6033&show_icons=true&theme=radical&count_private=true" height="150" alt="kdi6033's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kdi6033&layout=compact&theme=radical" height="150" alt="Top Languages" />
-</div>
