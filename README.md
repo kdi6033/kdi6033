@@ -74,7 +74,7 @@ graph TD
     CLOUD --> M1[mqtt-bridge]
 
     %% Download Center (Linked from FW)
-    FW -.-> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
+    FW --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
 
     %% Styling
     style MAIN fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
