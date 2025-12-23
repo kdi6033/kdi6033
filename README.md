@@ -29,35 +29,6 @@
 
 i2r 플랫폼은 펌웨어, 서버, 문서, 그리고 배포 시스템이 유기적으로 연결된 **통합 생태계**입니다.
 
-```text
-                          ┌──────────────────────────┐
-                          │       i2r Platform       │
-                          │  github.com/kdi6033/     │
-                          └─────────────┬────────────┘
-                                        │
-        ┌───────────────────────────────┼───────────────────────────────┐
-        │                               │                               │
-┌───────▼───────┐              ┌────────▼───────┐               ┌───────▼─────────┐
-│  i2r 제품     │              │ Server / Cloud │               │  Documentation  │
-│  (Board FW)   │              │ (React / API)  │               │  & Common Rules │
-└───────┬───────┘              └────────┬───────┘               └─────────────────┘
-        │                               │
- ┌──────┴──────┐      ┌─────────────────┴───────────────┐
- │ i2r-01      │      │ dashboard-react (React UI)      │
- │ i2r-02      │      │ api-node / python (Backend)     │
- │ i2r-03 (HMI)│      │ mqtt-bridge                     │
- │ i2r-04      │      └─────────────────────────────────┘
- │ i2r-05 (AI) │
- └──────┬──────┘
-        │
-┌───────▼──────────────────────────────────────────────────────────────┐
-│                       Download / Distribution                        │
-│                (Compiled Binaries .bin / OTA Updates)                │
-│                     github.com/kdi6033/download                      │
-└──────────────────────────────────────────────────────────────────────┘
-```
-
-
 ```mermaid
 graph TD
     %% Main Platform
@@ -80,54 +51,6 @@ graph TD
     style FW fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
     style DL fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
 ```
-
-
-```mermaid
-graph TD
-    %% Main Platform
-    MAIN["i2r Platform<br/>(github.com/kdi6033)"]:::root
-
-    %% Define Subgraphs for Structure
-    subgraph Hardware [Hardware & Firmware]
-        direction TB
-        FW["i2r 제품 (Board FW)"]:::hw
-        FW --> I01[i2r-01]
-        FW --> I02[i2r-02]
-        FW --> I03["i2r-03 (HMI)"]
-        FW --> I04[i2r-04]
-        FW --> I05["i2r-05 (AI)"]
-    end
-
-    subgraph Service [Cloud Service]
-        direction TB
-        CLOUD["Server / Cloud<br/>(React / API)"]:::sw
-        CLOUD --> R1[dashboard-react]
-        CLOUD --> A1[api-node / python]
-        CLOUD --> M1[mqtt-bridge]
-    end
-
-    subgraph Document [Guide]
-        direction TB
-        DOCS["Documentation<br/>& Rules"]:::doc
-    end
-
-    %% Connections
-    MAIN --> FW
-    MAIN --> CLOUD
-    MAIN --> DOCS
-    FW -.-> DL["Download / OTA Center<br/>(github.com/kdi6033/download)"]:::down
-
-    %% Styles
-    classDef root fill:#2196F3,stroke:#0D47A1,stroke-width:2px,color:white;
-    classDef hw fill:#FFF3E0,stroke:#FF9800,color:black;
-    classDef sw fill:#E8F5E9,stroke:#4CAF50,color:black;
-    classDef doc fill:#F3E5F5,stroke:#9C27B0,color:black;
-    classDef down fill:#ECEFF1,stroke:#607D8B,stroke-dasharray: 5 5;
-    
-    %% Flowchart Config (Optional: Add this to top if supported, else default curve)
-    %% linkStyle default interpolate basis
-```
-
 
 ### 📂 리포지토리 구성 상세
 
