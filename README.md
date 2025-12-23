@@ -66,7 +66,7 @@ graph TD
     MAIN --> DOCS["Documentation"]
 
     %% Firmware Branch
-    FW --> I01[i2r-01]
+    FW --> I01[i2r-01]I02[i2r-02]
     FW --> I02[i2r-02]
     FW --> I03["i2r-03 (HMI)"]
     FW --> I04[i2r-04]
