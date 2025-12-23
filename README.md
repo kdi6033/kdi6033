@@ -57,6 +57,35 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 그리고 배포 시스템이 유기
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
+
+```mermaid
+graph TD
+    %% Main Platform
+    MAIN["i2r Platform<br/>(github.com/kdi6033)"] --> FW["i2r 제품<br/>(Board FW)"]
+    MAIN --> CLOUD["Server / Cloud<br/>(React / API)"]
+    MAIN --> DOCS["Documentation"]
+
+    %% Firmware Branch
+    FW --> I01[i2r-01]
+    FW --> I02[i2r-02]
+    FW --> I03["i2r-03 (HMI)"]
+    FW --> I04[i2r-04]
+    FW --> I05["i2r-05 (AI)"]
+    
+    %% Cloud Branch
+    CLOUD --> R1[dashboard-react]
+    CLOUD --> A1[api-node / python]
+    CLOUD --> M1[mqtt-bridge]
+
+    %% Download Center (Linked from FW)
+    FW -.-> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
+
+    %% Styling
+    style MAIN fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
+    style FW fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
+    style DL fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
+```
+
 ### 📂 리포지토리 구성 상세
 
 | **분류 (Category)** | **리포지토리 (Repositories)** | **설명 (Description)** |
