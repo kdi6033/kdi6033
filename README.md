@@ -86,6 +86,51 @@ graph TD
     style DL fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
 ```
 
+
+
+```mermaid
+graph TD
+    %% Main Node
+    MAIN["i2r Platform<br/>(github.com/kdi6033)"]:::root
+
+    %% Layout using subgraphs for better structure
+    subgraph S_FW [Hardware & Firmware]
+        direction TB
+        FW["i2r 제품 (Board FW)"]:::hw
+        FW --> I01[i2r-01]
+        FW --> I02[i2r-02]
+        FW --> I03["i2r-03 (HMI)"]
+        FW --> I04[i2r-04]
+        FW --> I05["i2r-05 (AI)"]
+    end
+
+    subgraph S_CLOUD [Server & Cloud]
+        direction TB
+        CLOUD["Server / Cloud<br/>(React / API)"]:::sw
+        CLOUD --> R1[dashboard-react]
+        CLOUD --> A1[api-node / python]
+        CLOUD --> M1[mqtt-bridge]
+    end
+
+    subgraph S_DOCS [Docs]
+        direction TB
+        DOCS["Documentation<br/>& Rules"]:::doc
+    end
+
+    %% Connections
+    MAIN --> FW
+    MAIN --> CLOUD
+    MAIN --> DOCS
+    FW -.-> DL["Download / OTA<br/>(github.com/kdi6033/download)"]:::down
+
+    %% Styles
+    classDef root fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:white;
+    classDef hw fill:#BBDEFB,stroke:#1976D2,color:black;
+    classDef sw fill:#C8E6C9,stroke:#388E3C,color:black;
+    classDef doc fill:#FFECB3,stroke:#FFA000,color:black;
+    classDef down fill:#E0E0E0,stroke:#616161,stroke-dasharray: 5 5;
+```
+
 ### 📂 리포지토리 구성 상세
 
 | **분류 (Category)** | **리포지토리 (Repositories)** | **설명 (Description)** |
