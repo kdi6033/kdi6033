@@ -87,14 +87,13 @@ graph TD
 ```
 
 
-
 ```mermaid
 graph TD
-    %% Main Node
+    %% Main Platform
     MAIN["i2r Platform<br/>(github.com/kdi6033)"]:::root
 
-    %% Layout using subgraphs for better structure
-    subgraph S_FW [Hardware & Firmware]
+    %% Define Subgraphs for Structure
+    subgraph Hardware [Hardware & Firmware]
         direction TB
         FW["i2r 제품 (Board FW)"]:::hw
         FW --> I01[i2r-01]
@@ -104,7 +103,7 @@ graph TD
         FW --> I05["i2r-05 (AI)"]
     end
 
-    subgraph S_CLOUD [Server & Cloud]
+    subgraph Service [Cloud Service]
         direction TB
         CLOUD["Server / Cloud<br/>(React / API)"]:::sw
         CLOUD --> R1[dashboard-react]
@@ -112,7 +111,7 @@ graph TD
         CLOUD --> M1[mqtt-bridge]
     end
 
-    subgraph S_DOCS [Docs]
+    subgraph Document [Guide]
         direction TB
         DOCS["Documentation<br/>& Rules"]:::doc
     end
@@ -121,15 +120,19 @@ graph TD
     MAIN --> FW
     MAIN --> CLOUD
     MAIN --> DOCS
-    FW -.-> DL["Download / OTA<br/>(github.com/kdi6033/download)"]:::down
+    FW -.-> DL["Download / OTA Center<br/>(github.com/kdi6033/download)"]:::down
 
     %% Styles
-    classDef root fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:white;
-    classDef hw fill:#BBDEFB,stroke:#1976D2,color:black;
-    classDef sw fill:#C8E6C9,stroke:#388E3C,color:black;
-    classDef doc fill:#FFECB3,stroke:#FFA000,color:black;
-    classDef down fill:#E0E0E0,stroke:#616161,stroke-dasharray: 5 5;
+    classDef root fill:#2196F3,stroke:#0D47A1,stroke-width:2px,color:white;
+    classDef hw fill:#FFF3E0,stroke:#FF9800,color:black;
+    classDef sw fill:#E8F5E9,stroke:#4CAF50,color:black;
+    classDef doc fill:#F3E5F5,stroke:#9C27B0,color:black;
+    classDef down fill:#ECEFF1,stroke:#607D8B,stroke-dasharray: 5 5;
+    
+    %% Flowchart Config (Optional: Add this to top if supported, else default curve)
+    %% linkStyle default interpolate basis
 ```
+
 
 ### 📂 리포지토리 구성 상세
 
