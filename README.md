@@ -40,18 +40,6 @@
 | <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-kc.png?raw=true" height="135"> |
 
 
-<div align="center">
-
-## 🛠️ i2r Smart IoT Series Lineup
-
-| 🛰️ **i2r-01**<br>IoT 통신 모듈 | 🕹️ **i2r-02**<br>IoT PLC (4ch) | 🌡️ **i2r-03**<br>IoT PLC (4ch 센서) | ⚡ **i2r-04**<br>IoT PLC (8ch) |
-| :---: | :---: | :---: | :---: |
-| [🛍️ 네이버](https://smartstore.naver.com/i2r/products/8284829279) \| [🛒 쿠팡](https://www.coupang.com/vp/products/9042380453) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=15) | [🛍️ 네이버](https://smartstore.naver.com/i2r/products/8285060920) \| [🛒 쿠팡](https://www.coupang.com/vp/products/8752533658) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=13) | [🛍️ 네이버](https://smartstore.naver.com/i2r/products/8285011211) \| [🛒 쿠팡](https://www.coupang.com/vp/products/8753606053) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=14) | [🛍️ 네이버](https://smartstore.naver.com/i2r/products/9524935681) \| [🛒 쿠팡](https://www.coupang.com/vp/products/8753613193) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=12) |
-| <img src="https://github.com/kdi6033/i2r-01/raw/main/images/i2r01-kc.png?raw=true" height="155"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/i2r-02-kc.png?raw=true" height="155"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/i2r-03-kc.png?raw=true" height="155"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/i2r-04-kc.jpg?raw=true" height="155"> |
-| <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-iso.png?raw=true" height="130"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-iso.png?raw=true" height="130"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-iso1.png?raw=true" height="130"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-3.png?raw=true" height="130"> |
-| <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-kc.png?raw=true" height="145"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-kc.png?raw=true" height="145"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-kc.png?raw=true" height="145"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-kc.png?raw=true" height="145"> |
-
-</div>
 
 ## 🗂️ Repositories
 | 모델 | 주요 사양 | 구매 및 자료 링크 |
