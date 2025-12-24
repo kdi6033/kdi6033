@@ -24,6 +24,14 @@
 
 ---
 
+## 📺 i2r 공식 채널 및 자료 링크
+- 💻 GitHub: https://github.com/kdi6033  
+- 📺 YouTube: https://www.youtube.com/@i2r-link  
+- 🌐 공식 사이트: https://i2r.link  
+- 📧 문의: kdi6033@doowon.ac.kr
+
+---
+
 
 ## 🗂️ i2r 플랫폼 아키텍처 (System Architecture)
 
