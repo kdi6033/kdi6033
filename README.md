@@ -39,7 +39,7 @@
 
 | i2r-01 | i2r-02 | i2r-03 | i2r-04 |
 | :---: | :---: | :---: | :---: |
-| <img src="https://github.com/kdi6033/i2r-01/raw/main/images/i2r01-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/i2r-02-kc.png?raw=true" height="150"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/i2r-03-kc.png?raw=true" height="180"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/i2r-04-kc.jpg?raw=true" height="140"> |
+| <img src="https://github.com/kdi6033/i2r-01/raw/main/images/i2r01-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/i2r-02-kc.png?raw=true" height="150"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/i2r-03-kc.png?raw=true" height="160"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/i2r-04-kc.jpg?raw=true" height="140"> |
 | <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-iso.png?raw=true" height="120"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-iso.png?raw=true" height="130"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-iso1.png?raw=true" height="160"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-3.png?raw=true" height="120"> |
 | <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-kc.png?raw=true" height="140"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-kc.png?raw=true" width="200" height="150"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-kc.png?raw=true" height="130"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-kc.png?raw=true" height="135"> |
 
