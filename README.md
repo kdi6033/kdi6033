@@ -30,7 +30,7 @@
 - 🌐 공식 사이트: https://i2r.link  
 - 📧 문의: kdi6033@doowon.ac.kr
 
-| 모델 Repositories | 주요 사양 | 구매 및 자료 링크 |
+| 모델<br> Repositories | 주요 사양 | 구매 및 자료 링크 |
 | :--- | :--- | :--- |
 | **[i2r-01](https://github.com/kdi6033/i2r-01)** | **통신 모듈**<br> Wi-Fi, BLE, RS232, RS485 통합<br>입력전압 5~30V | [🛍️ 네이버](https://smartstore.naver.com/i2r/products/8284829279) \| [🛒 쿠팡](https://www.coupang.com/vp/products/9042380453) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=15) \| [📂 GitHub](https://github.com/kdi6033/i2r-01) |
 | **[i2r-02](https://github.com/kdi6033/i2r-02)** | **IoT PLC (4ch)**<br> 30A 릴레이 1개 + 10A 릴레이 3개<br>Wi-Fi·BLE 통신 | [🛍️ 네이버](https://smartstore.naver.com/i2r/products/8285060920) \| [🛒 쿠팡](https://www.coupang.com/vp/products/8752533658) \| [🏠 Café24](https://i2rlink.cafe24.com/shop3/product/detail.html?product_no=13) \| [📂 GitHub](https://github.com/kdi6033/i2r-02) |
