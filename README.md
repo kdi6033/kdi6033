@@ -30,6 +30,12 @@
 - 🌐 공식 사이트: https://i2r.link  
 - 📧 문의: kdi6033@doowon.ac.kr
 
+## 🔷i2r 제품
+| | | | |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/kdi6033/i2r-03/blob/main/images/case-i2r03-1.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-03/blob/main/images/case-i2r03-2.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-03/blob/main/images/case-i2r03-3.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-03/blob/main/images/case-i2r03-bottom.png?raw=true" width="200"> |
+
+
 ## 🗂️ Repositories
 | 모델 | 주요 사양 | 구매 및 자료 링크 |
 | :--- | :--- | :--- |
