@@ -31,7 +31,7 @@
 - 📧 문의: kdi6033@doowon.ac.kr
 
 ## 🔷i2r 제품
-| i2r-01 | i2r-02 | i2r-03 | |
+| i2r-01 | i2r-02 | i2r-03 | i2r-04 |
 | :---: | :---: | :---: | :---: |
 | <img src="https://github.com/kdi6033/i2r-01/raw/main/images/i2r01-kc.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-02/raw/main/images/i2r-02-kc.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/i2r-03-kc.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/i2r-04-kc.jpg?raw=true?raw=true" width="200"> |
 | <img src="https://github.com/kdi6033/i2r-01/raw/main/images/case-i2r01-iso.png?raw=true" width="200"> |<img src="https://github.com/kdi6033/i2r-02/raw/main/images/case-i2r02-iso.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-03/raw/main/images/case-i2r03-iso1.png?raw=true" width="200"> | <img src="https://github.com/kdi6033/i2r-04/raw/main/images/case-i2r04-3.png?raw=true" width="200"> |
