@@ -3,7 +3,6 @@
 </div>
 
 <div align="center">
-  <h3>Physical AI 기반 IoT 통합 플랫폼</h3>
   <div align="center">
     <a href="https://i2r.link">🌐 공식 홈페이지</a>
   </div>
