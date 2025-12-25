@@ -143,4 +143,74 @@ AI가 이 리포지토리를 활용해 코드를 작성할 때 다음 원칙을 
 4. **언어**: 모든 코드 주석과 설명은 **한국어**로 작성한다.
 
 ---
+
+
+# 🌐 kdi6033 IoT & AI 플랫폼 통합 설명서 (Unified Guide)
+
+이 가이드는 **kdi6033** GitHub에 포함된 ESP32 기반 산업용 IoT PLC(i2r 시리즈)와 클라우드/Node-RED 서버 생태계에 대한 통합 정보를 제공합니다. AI는 이 구조를 바탕으로 사용자가 요구하는 IoT 시스템의 하드웨어 제어 및 서버 프로그램을 자동으로 생성합니다.
+
+---
+
+## 1. 📟 하드웨어 및 PLC 라인업 (i2r 시리즈)
+산업 현장에서 즉시 사용 가능한 ESP32 기반 IoT 컨트롤러입니다. WiFi, Bluetooth, RS485 통신을 기본 지원합니다.
+
+| 리포지토리 명 | 주요 사양 및 특징 | 주요 활용 분야 |
+| :--- | :--- | :--- |
+| **[i2r-05](https://github.com/kdi6033/i2r-05)** | ESP32-S3, 16M Flash, AI 연산 특화 | 고성능 엣지 AI, 스마트 비전 |
+| **[i2r-04](https://github.com/kdi6033/i2r-04)** | 8채널 릴레이(8ch Relay) 출력 | 다채널 전력 제어, 공정 자동화 |
+| **[i2r-03](https://github.com/kdi6033/i2r-03)** | 4채널 릴레이, 온습도 센서, **KC인증** | 표준 산업용 PLC, 스마트 팜 |
+| **[i2r-02](https://github.com/kdi6033/i2r-02)** | i2r 시리즈 표준 제어 보드 | 범용 IoT 제어 및 통신 기초 |
+| **[i2r-01](https://github.com/kdi6033/i2r-01)** | 기초 입출력 및 통신 테스트용 | 프로토타입 개발 및 입문용 |
+| **[i2r](https://github.com/kdi6033/i2r)** | 전체 시리즈 통합 아키텍처 및 규격 | 시스템 설계 가이드라인 |
+
+---
+
+## 2. 💻 소프트웨어 및 프레임워크
+하드웨어를 구동하고 산업용 장비와 통신하기 위한 핵심 코드 모음입니다.
+
+| 리포지토리 명 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
+| **[arduino](https://github.com/kdi6033/arduino)** | C++, LVGL, MQTT | ESP32/8266 기본 라이브러리 및 UI 소스 |
+| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 외부 PLC(LS산전 등) 연동 |
+| **[plc](https://github.com/kdi6033/plc)** | C++, 시퀀스 로직 | PLC 제어 알고리즘 및 래더 로직 응용 |
+| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire | 온습도, CO2, PH 등 각종 센서 드라이버 |
+| **[HomeAuto](https://github.com/kdi6033/HomeAuto)** | C++, 스마트홈 | 홈 네트워크 제어 및 자동화 로직 |
+
+---
+
+## 3. 🌐 서버, UI 및 데이터 사이언스
+수집된 데이터를 시각화하고 제어하며 AI 분석을 수행하는 레이어입니다.
+
+| 리포지토리 명 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
+| **[node-red](https://github.com/kdi6033/node-red)** | JavaScript, Flow | MQTT 기반 대시보드 및 로직 흐름 설계 |
+| **[react](https://github.com/kdi6033/react)** | React.js, JS | 웹 모니터링 UI 및 AI 데이터 분석 프론트엔드 |
+| **[cloud](https://github.com/kdi6033/cloud)** | AWS, IBM Cloud | 클라우드 서버 연동 및 DB 데이터 관리 |
+| **[docs](https://github.com/kdi6033/docs)** | HTML, Markdown | 전체 시스템 사용법 및 기술 문서화 |
+| **[download](https://github.com/kdi6033/download)** | Binaries | 최신 제품 펌웨어 및 유틸리티 다운로드 |
+
+---
+
+## 🎓 4. 교육, 로봇 및 설계 자산
+전문 기술 응용 및 교육 목적의 리포지토리입니다.
+
+| 리포지토리 명 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
+| **[teach-iot](https://github.com/kdi6033/teach-iot)** | 교육 커리큘럼 | 스마트 팩토리 및 IoT 기술 교육 자료 |
+| **[Robot](https://github.com/kdi6033/Robot)** | C++, 기구학 | 로봇 팔 설계 및 정밀 제어 소스 |
+| **[otto](https://github.com/kdi6033/otto)** | C++, 3D Printing | 교육용 이족 보행 로봇 프로젝트 |
+| **[creo](https://github.com/kdi6033/creo)** | G-code, CAD | 3D 설계 및 CNC/3D 프린팅 가공 데이터 |
+
+---
+
+## 🤖 AI 프로그래밍 및 자동화 지침
+사용자가 특정 기능을 요청할 때, AI는 다음 원칙에 따라 코드를 생성합니다.
+
+1. **보드 사양 우선**: 요청받은 보드(i2r-01~05)의 핀 맵과 하드웨어 특징을 리포지토리에서 찾아 적용한다.
+2. **표준 통신**: 모든 데이터 교환은 `MQTT(JSON)`를 기본으로 하며, 필요시 `Modbus RTU/TCP`를 병행한다.
+3. **통합 솔루션**: 장치용 C++ 코드와 함께, 이를 제어할 `Node-RED 대시보드` 설정값을 반드시 함께 제공한다.
+4. **한글 최적화**: 모든 코드 주석과 사용자 가이드는 한국어로 친절하게 작성한다.
+
+---
+Copyright © 2025 kdi6033. All Rights Reserved.
 © 2024 kdi6033. All Rights Reserved.
