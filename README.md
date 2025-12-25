@@ -3,9 +3,8 @@
 </div>
 
 <div align="center">
-  <div align="center">
-    <a href="https://i2r.link">🌐 공식 홈페이지</a>
-  </div>
+  <a href="https://i2r.link">🌐 공식 홈페이지</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+  <a href="https://i2r.link/products">🛒 i2r 제품구매</a>
 </div>
 
 ---
