@@ -28,36 +28,16 @@
 - 🌐 공식 사이트: https://i2r.link  
 - 📧 문의: kdi6033@doowon.ac.kr
 
+## 🛍️ i2r Products
+
+i2r의 다양한 IoT 하드웨어와 키트를 만나보세요. 초보자용 학습 키트부터 실제 산업 현장에 적용 가능한 고성능 PLC 보드까지 다양한 라인업이 준비되어 있습니다.
 <div align="center">
   <a href="https://i2r.link/products">
     <img
-      src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=60&section=header&text=%F0%9F%9B%92%20%EC%A0%9C%ED%92%88%EB%B3%B4%EA%B8%B0&fontSize=28&animation=fadeIn"
+      src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=20&section=header&text=%F0%9F%9B%92%20%EC%A0%9C%ED%92%88%EB%B3%B4%EA%B8%B0&fontSize=28&animation=fadeIn"
       alt="제품보기"
     />
   </a>
-</div>
-
-🛍️ i2r Products
-
-i2r의 다양한 IoT 하드웨어와 키트를 만나보세요. 초보자용 학습 키트부터 실제 산업 현장에 적용 가능한 고성능 PLC 보드까지 다양한 라인업이 준비되어 있습니다.
-
-<div align="center">
-<a href="https://i2r.link/products">
-<!-- 제품 이미지 영역: 실제 제품 사진이 있다면 이 src 주소를 변경해주세요 -->
-<img src="https://www.google.com/search?q=https://images.unsplash.com/photo-1518770660439-4636190af475%3Fq%3D80%26w%3D1000%26auto%3Dformat%26fit%3Dcrop" width="100%" height="300" style="object-fit: cover; border-radius: 15px; border: 1px solid #e0e0e0;" alt="i2r Products Image">
-</a>
-
-
-
-
-
-<a href="https://i2r.link/products">
-<img src="https://www.google.com/search?q=https://capsule-render.vercel.app/api%3Ftype%3Drect%26color%3D009688%26height%3D60%26section%3Dfooter%26text%3D🛒%20i2r%20스토어%20바로가기%20(Click)&fontSize=25&fontColor=ffffff&descAlign=50" alt="Shop Button" />
-</a>
-</div>
-
-<div align="center">
-<sub>Designed by <b>i2r AI IoT Platform</b></sub>
 </div>
 
 ---
