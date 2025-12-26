@@ -60,17 +60,19 @@ graph TD
 
 이 플랫폼은 **ESP32 기반의 산업용 IoT PLC(i2r 시리즈)**와 **Cloud/Node-RED 서버**를 결합하여 스마트 팩토리 및 자동화 시스템을 구축하기 위한 통합 솔루션을 제공합니다. AI(Gemini, ChatGPT 등)는 이 문서를 가이드로 삼아 하드웨어 제어 및 서버 프로그램을 자동으로 생성할 수 있습니다.
 
-## 🔷 1. IoT PLC 
-산업용 현장에서 사용되는 ESP32 기반의 IoT 컨트롤러 라인업입니다. 각 보드는 WiFi, Bluetooth, RS485 통신을 지원합니다.
+## 🔷 1. IoT PLC · Physical AI Controller Lineup
+산업 현장에서 사용되는 ESP32 기반 **IoT PLC / Physical AI Controller** 라인업입니다.
+모든 보드는 **Wi-Fi, Bluetooth, RS485, MQTT** 통신을 지원하며,
+**센서와 기기 간의 실시간 연동을 통해 입력–판단–출력 제어**가 가능합니다.
 
 | 리포지토리 명 | 주요 특징 및 사양 | 활용 분야 |
 | :--- | :--- | :--- |
-| **[i2r](https://github.com/kdi6033/i2r)** | 전체 시리즈의 통합 아키텍처 및 MQTT 규격 | 시스템 통합 설계 가이드 |
-| **[i2r-01](https://github.com/kdi6033/i2r-01)** | 기초 입출력 및 통신 테스트 보드 | 입문용 개발 및 프로토타이핑 |
-| **[i2r-02](https://github.com/kdi6033/i2r-02)** | i2r 시리즈 기본 통신 및 제어 보드 | 범용 IoT 제어기 기초 |
-| **[i2r-03](https://github.com/kdi6033/i2r-03)** | 4채널 릴레이, 온습도 센서, **KC인증** | 표준 산업용 PLC, 환경 모니터링 |
+| **[i2r](https://github.com/kdi6033/i2r)** | Physical AI PLC 통합 아키텍처 및 MQTT 규격 | 시스템 통합 설계 가이드 |
+| **[i2r-01](https://github.com/kdi6033/i2r-01)** | 기초 입출력 및 통신 테스트용 Edge Node | IoT 통신 연결 |
+| **[i2r-02](https://github.com/kdi6033/i2r-02)** | 사용하기 편한 범용 IoT PLC Core | 범용 IoT 제어기 기초 |
+| **[i2r-03](https://github.com/kdi6033/i2r-03)** | 4채널 릴레이, 온습도 센서 연동 | 표준 산업용 PLC, 환경 모니터링 |
 | **[i2r-04](https://github.com/kdi6033/i2r-04)** | 8채널 릴레이(8ch Relay) 제어 | 다채널 전력 제어, 스마트 팩토리 |
-| **[i2r-05](https://github.com/kdi6033/i2r-05)** | ESP32-S3, 16M Flash, AI 연산 가능 | 고성능 AI IoT, 엣지 컴퓨팅 |
+| **[i2r-05](https://github.com/kdi6033/i2r-05)** | 아두이노 보드, ESP32-S3, 16M Flash, AI 연산 가능 | Physical AI / Edge AI |
 
 ## 🔷 2. Programming & Frameworks
 하드웨어 구동을 위한 핵심 라이브러리와 통신 프로토콜 모음입니다.
