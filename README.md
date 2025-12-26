@@ -28,6 +28,15 @@
 - 🌐 공식 사이트: https://i2r.link  
 - 📧 문의: kdi6033@doowon.ac.kr
 
+<div align="center">
+  <a href="https://i2r.link/products">
+    <img
+      src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=60&section=header&text=%F0%9F%9B%92%20%EC%A0%9C%ED%92%88%EB%B3%B4%EA%B8%B0&fontSize=28&animation=fadeIn"
+      alt="제품보기"
+    />
+  </a>
+</div>
+
 ---
 ## 🗂️ i2r 플랫폼 아키텍처 (System Architecture)
 
