@@ -36,7 +36,6 @@ i2r의 다양한 IoT 하드웨어와 키트를 만나보세요. 초보자용 학
     <img
       src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=90&section=header&text=%F0%9F%9B%92%20%EC%A0%9C%ED%92%88%EB%B3%B4%EA%B8%B0&fontSize=28&animation=fadeIn"
       alt="제품보기" 
-      width="80"
     />
   </a>
 </div>
