@@ -74,18 +74,21 @@ graph TD
 | **[i2r-04](https://github.com/kdi6033/i2r-04)** | 8채널 릴레이(8ch Relay) 제어 | 다채널 전력 제어, 스마트 팩토리 |
 | **[i2r-05](https://github.com/kdi6033/i2r-05)** | 아두이노 보드, ESP32-S3, 16M Flash, AI 연산 가능 | Physical AI / Edge AI |
 
-## 🔷 2. Programming & Frameworks
+## 🔷 2. Physical AI & Device Control
+| 리포지토리 명 | 기술 스택 | 설명 |
+| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서 드라이버 |
+| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
+| **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | PLC 제어 알고리즘 및 시퀀스 로직 |
+
+## 🔷 3. Programming & Frameworks
 하드웨어 구동을 위한 핵심 라이브러리와 통신 프로토콜 모음입니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
-| **[arduino](https://github.com/kdi6033/arduino)** | C++, LVGL, MQTT | ESP32/8266 기본 라이브러리 및 UI 소스 |
-| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
-| **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | PLC 제어 알고리즘 및 시퀀스 로직 |
-| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서 드라이버 |
-| **[HomeAuto](https://github.com/kdi6033/HomeAuto)** | C++, Smart Home | 홈 오토메이션 전용 제어 로직 |
+| **[arduino](https://github.com/kdi6033/arduino)** | C++, LVGL, MQTT | ESP32 Physical AI PLC 펌웨어, LVGL HMI |
+| **[HomeAuto](https://github.com/kdi6033/HomeAuto)** | C++, Smart Home | Physical AI 기반 홈 자동화 예제 |
 
-## 🔷 3. Server, UI & Data Science
+## 🔷 4. Server · UI · Data Science (IoT Intelligence Layer)
 데이터를 수집, 시각화하고 AI로 분석하기 위한 플랫폼 레이어입니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
@@ -102,16 +105,16 @@ graph TD
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
-| **[Robot](https://github.com/kdi6033/Robot)** | Kinematics, C++ | 로봇 팔 설계, 제어 및 기구학 해석 |
+| **[Robot](https://github.com/kdi6033/Robot)** | Kinematics, C++ | 로봇 제어 |
 | **[otto](https://github.com/kdi6033/otto)** | C++, 3D Print | 교육용 이족 보행 로봇(Otto Robot) 프로젝트 |
-| **[creo](https://github.com/kdi6033/creo)** | G-code, CAD | 기구 설계 및 CNC/3D 프린팅 가공 데이터 |
+| **[creo](https://github.com/kdi6033/creo)** | CAD | 기구 설계 및 CNC/3D 프린팅 가공 데이터 |
 
 ## 🤖 AI Programming Guide (Prompt)
 AI가 이 리포지토리를 활용해 코드를 작성할 때 다음 원칙을 따릅니다.
 
-1. **보드 식별**: 사용자가 요청한 보드(i2r-01~05)에 해당하는 리포지토리의 핀 맵을 우선 참조한다.
+1. **보드 식별**: 사용자가 요청한 보드에 해당하는 리포지토리의 핀 맵을 우선 참조한다.
 2. **통신 표준**: `MQTT`를 기본 통신 프로토콜로 사용하며, 데이터 포맷은 `JSON`을 따른다.
-3. **서버 연동**: 장치용 C++ 코드와 함께 해당 데이터를 처리할 `Node-RED` 흐름(Flow)을 제안한다.
+3. **서버 연동**: 장치용 C++, react, Physon 코드와 함께 해당 mongoDB 데이터를 기반으로 한다.
 4. **언어**: 모든 코드 주석과 설명은 **한국어**로 작성한다.
 
 ---
