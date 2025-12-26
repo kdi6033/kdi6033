@@ -23,22 +23,11 @@
 ---
 
 ## 📺 i2r 공식 채널 및 자료 링크
+- 🛒 i2r 제품구매: href="https://i2r.link/products
 - 💻 GitHub: https://github.com/kdi6033  
 - 📺 YouTube: https://www.youtube.com/@i2r-link  
 - 🌐 공식 사이트: https://i2r.link  
 - 📧 문의: kdi6033@doowon.ac.kr
-
-## 🛍️ i2r Products
-
-i2r의 다양한 IoT 하드웨어와 키트를 만나보세요. 초보자용 학습 키트부터 실제 산업 현장에 적용 가능한 고성능 PLC 보드까지 다양한 라인업이 준비되어 있습니다.
-<div align="center">
-  <a href="https://i2r.link/products">
-    <img
-      src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=40&section=header&text=%F0%9F%9B%92%20%EC%A0%9C%ED%92%88%EB%B3%B4%EA%B8%B0&fontSize=28&animation=fadeIn"
-      alt="제품보기" 
-    />
-  </a>
-</div>
 
 ---
 ## 🗂️ i2r 플랫폼 아키텍처 (System Architecture)
