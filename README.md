@@ -87,6 +87,10 @@ graph TD
 
 - **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code PLC 제어 환경**
 ------------
+- IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업
+- On-Device AI로 센서 데이터를 현장에서 즉시 판단
+- UI 입력 기반(No-Code)으로 PLC 출력과 제어를 실행
+---
 
 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**입니다.  
 본 라인업은 다양한 **IoT 센서(온·습도, CO₂, 조도, 전압, 전류 등)**를 안정적으로 수집·처리하며,  
