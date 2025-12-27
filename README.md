@@ -78,27 +78,10 @@ graph TD
 ## 🔷 2. Physical AI & Device Control
 
 - 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**
-- 온·습도, CO₂, 조도, 전압, 전류 등 다양한 **IoT 센서를 안정적으로 수집·처리**
-- Wi-Fi / Bluetooth / RS-485 / MQTT 통신을 통한 **현장 기기와 실시간 연결**
-
-- 수집된 센서 데이터를 **On-Device AI로 현장에서 즉시 분석·판단**
-- 판단 결과에 따라 **PLC 출력, 액추에이터, 외부 제어 시스템을 Edge 단에서 직접 제어**
-- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작
-
-- **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code PLC 제어 환경**
-------------
-- IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업
-- On-Device AI로 센서 데이터를 현장에서 즉시 판단
-- UI 입력 기반(No-Code)으로 PLC 출력과 제어를 실행
----
-
-산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**입니다.  
-본 라인업은 다양한 **IoT 센서(온·습도, CO₂, 조도, 전압, 전류 등)**를 안정적으로 수집·처리하며,  
-Wi-Fi, Bluetooth, RS-485, MQTT 통신을 통해 현장 기기와 실시간으로 연결됩니다.
-
-수집된 센서 데이터는 **On-Device AI 기반으로 현장에서 즉시 분석·판단**되며,  
-그 결과를 바탕으로 **PLC 출력, 액추에이터, 외부 제어 시스템을 Edge 단에서 직접 제어**합니다.  
-이를 통해 **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작합니다.
+- 온·습도, CO₂, 조도, 전압, 전류 등 **IoT 센서 실시간 수집·처리 및 현장 연결**
+- 센서 데이터를 **On-Device AI로 즉시 분석·판단** 하고 **PLC·액추에이터를 Edge 단에서 직접 제어**
+- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작 (IoT Sensor, PLC / Actuator → On-Device AI → Edge Controller)
+- **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code 제어 환경**
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
