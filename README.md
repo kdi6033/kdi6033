@@ -76,6 +76,7 @@ graph TD
 | **[i2r-05](https://github.com/kdi6033/i2r-05)** | 아두이노 보드, ESP32-S3, 16M Flash, AI 연산 가능 | Physical AI / Edge AI |
 
 ## 🔷 2. Physical AI & Device Control
+
 | 리포지토리 명 | 기술 스택 | 설명 |
 | **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서 드라이버 |
 | **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
