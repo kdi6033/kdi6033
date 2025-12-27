@@ -87,12 +87,6 @@ Wi-Fi, Bluetooth, RS-485, MQTT 통신을 통해 현장 기기와 실시간으로
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
-| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, MQTT HTTP | 각종 엣지컴퓨터와 콘트롤러 |
-| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서와 콘트롤러 연동제어 |
-| **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | LS산전 PLC 제어 알고리즘 및 통신제어 |
-
-| 리포지토리 명 | 기술 스택 | 설명 |
-| :--- | :--- | :--- |
 | **[IoT](https://github.com/kdi6033/IoT)** | C++, MQTT, HTTP, Phytyon | 산업 현장에서 사용되는 **ESP32 기반 Edge Controller 계층**으로, Wi-Fi·Bluetooth·RS-485·MQTT 통신을 통해 각종 엣지 컴퓨터, 컨트롤러, 외부 시스템과 연결되며 **On-Device AI 판단 결과를 현장 제어로 전달** |
 | **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | **IoT Sensor 중심 Physical AI 계층**으로, 온·습도, CO₂, 조도, 전압, 전류 등 다양한 센서를 안정적으로 수집·처리하고, 수집된 데이터를 **On-Device AI가 현장에서 즉시 분석·판단**할 수 있도록 제공 |
 | **[plc](https://github.com/kdi6033/plc)** | C++, Modbus, Ladder Logic 응용 | **On-Device AI 판단 결과를 실행하는 제어 계층**으로, 센서 기반 AI 판단에 따라 PLC 출력, 액추에이터, 타사 PLC(LS산전 등)를 직접 제어하여 **입력 → 판단 → 출력**의 Edge 제어 루프를 완성 |
