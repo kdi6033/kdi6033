@@ -87,9 +87,9 @@ Wi-Fi, Bluetooth, RS-485, MQTT 통신을 통해 현장 기기와 실시간으로
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
+| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, MQTT HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
 | **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서 드라이버 |
-| **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
-| **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | PLC 제어 알고리즘 및 시퀀스 로직 |
+| **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | LS산전 PLC 제어 알고리즘 및 통신제어 |
 
 ## 🔷 3. Programming & Frameworks
 하드웨어 구동을 위한 핵심 라이브러리와 통신 프로토콜 모음입니다.
