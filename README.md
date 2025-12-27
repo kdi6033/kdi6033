@@ -80,7 +80,7 @@ graph TD
 - 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**
 - 온·습도, CO₂, 조도, 전압, 전류 등 **IoT 센서 실시간 수집·처리 및 현장 연결**
 - 센서 데이터를 **On-Device AI로 즉시 분석·판단** 하고 **PLC·액추에이터를 Edge 단에서 직접 제어**
-- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작 (IoT Sensor, PLC / Actuator → On-Device AI → Edge Controller)
+- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작 **(IoT Sensor, PLC / Actuator → On-Device AI → Edge Controller)**
 - **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code 제어 환경**
 
 | 리포지토리 명 | 기술 스택 | 설명 |
