@@ -78,6 +78,7 @@ graph TD
 ## 🔷 2. Physical AI & Device Control
 
 | 리포지토리 명 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
 | **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | 온습도, CO2, PH 등 각종 센서 드라이버 |
 | **[IoT](https://github.com/kdi6033/IoT)** | C++, Modbus, HTTP | 산업용 센서 및 타사 PLC(LS산전 등) 연동 |
 | **[plc](https://github.com/kdi6033/plc)** | C++, Ladder Logic 응용 | PLC 제어 알고리즘 및 시퀀스 로직 |
