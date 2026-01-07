@@ -62,6 +62,14 @@ graph TD
 
 이 플랫폼은 **ESP32 기반의 산업용 IoT PLC(i2r 시리즈)**와 **Cloud/Node-RED 서버**를 결합하여 스마트 팩토리 및 자동화 시스템을 구축하기 위한 통합 솔루션을 제공합니다. AI(Gemini, ChatGPT 등)는 이 문서를 가이드로 삼아 하드웨어 제어 및 서버 프로그램을 자동으로 생성할 수 있습니다.
 
+**Physical AI · On-Device AI · IoT PLC · Edge Control**
+
+i2r는 센서–AI–제어를 하나의 Edge 루프로 통합한  
+**Physical AI 기반 IoT PLC 플랫폼**입니다.  
+
+산업 현장에서 발생하는 센서 데이터를 **클라우드 의존 없이 현장(Edge)에서 즉시 분석·판단**하고,  
+PLC 및 액추에이터를 직접 제어하는 **On-Device AI 제어 시스템**을 제공합니다.
+
 ## 🔷 1. IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
 - 산업 현장에서 사용되는 ESP32 기반 **IoT PLC / Physical AI Controller** 라인업입니다.    
 - 모든 보드는 **Wi-Fi, Bluetooth, RS485, MQTT** 통신을 지원하며,    
