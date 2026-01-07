@@ -60,20 +60,20 @@ graph TD
 
 # 🌐 kdi6033 IoT & AI 플랫폼 통합 설명서 (Unified Guide)
 
-이 플랫폼은 **ESP32 기반의 산업용 IoT PLC(i2r 시리즈)**와 **Cloud/Node-RED 서버**를 결합하여 스마트 팩토리 및 자동화 시스템을 구축하기 위한 통합 솔루션을 제공합니다. AI(Gemini, ChatGPT 등)는 이 문서를 가이드로 삼아 하드웨어 제어 및 서버 프로그램을 자동으로 생성할 수 있습니다.
-
 **Physical AI · On-Device AI · IoT PLC · Edge Control**
 
 i2r는 센서–AI–제어를 하나의 Edge 루프로 통합한  
 **Physical AI 기반 IoT PLC 플랫폼**입니다.  
 
-산업 현장에서 발생하는 센서 데이터를 **클라우드 의존 없이 현장(Edge)에서 즉시 분석·판단**하고,  
+산업 현장에서 발생하는 센서 데이터를 **클라우드 연동하며, 현장(Edge)에서 즉시 분석·판단**하고,  
 PLC 및 액추에이터를 직접 제어하는 **On-Device AI 제어 시스템**을 제공합니다.
 
 ## 🔷 1. IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
-- 산업 현장에서 사용되는 ESP32 기반 **IoT PLC / Physical AI Controller** 라인업입니다.    
-- 모든 보드는 **Wi-Fi, Bluetooth, RS485, MQTT** 통신을 지원하며,    
-- **센서와 기기 간의 실시간 연동을 통해 입력–판단–출력 제어**가 가능합니다.    
+
+- 산업 현장에서 사용되는 **ESP32 기반 IoT PLC / Physical AI Controller** 라인업입니다.  
+- 센서 입력부터 판단, 출력 제어까지를 하나의 장치에서 처리하는 **Edge 제어 시스템**을 제공합니다.
+- 모든 보드는 **Wi-Fi, Bluetooth, MQTT** 통신을 기본 지원하며,  
+- 센서와 기기 간의 실시간 연동을 통해 **입력(Sensor) → 판단(AI) → 출력(Control)** 이 현장에서 즉시 수행됩니다.
 
 | 리포지토리 명 | 주요 특징 및 사양 | 활용 분야 |
 | :--- | :--- | :--- |
@@ -82,10 +82,15 @@ PLC 및 액추에이터를 직접 제어하는 **On-Device AI 제어 시스템**
 | **[i2r-03](https://github.com/kdi6033/i2r-03)** | 4채널 릴레이, 온습도 센서 연동 | 표준 산업용 PLC, 환경 모니터링 |
 | **[i2r-04](https://github.com/kdi6033/i2r-04)** | 8채널 릴레이(8ch Relay) 제어 | 다채널 전력 제어, 스마트 팩토리 |
 
-## 🔷 2. IoT Sensor · Actuator
+## 🔷 2. IoT Sensor · Actuator **(Physical World Interface)**
 
-- 온·습도, CO₂, 조도, 전압, 전류 등 **IoT 센서 실시간 수집·처리 및 현장 연결**
-- 센서 데이터를 **On-Device AI로 즉시 분석·판단** 하고 **PLC·액추에이터를 Edge 단에서 직접 제어**
+- IoT PLC 및 Edge Controller와 연동되어  
+- 물리 세계의 상태를 **실시간으로 수집(Sensor)** 하거나  
+- 실제 동작을 **직접 수행(Actuator)** 하는 장치 및 기술 계층입니다.
+
+- 온·습도, CO₂, 조도, 전압, 전류 등 다양한 센서 데이터를 안정적으로 수집하고,  
+- 수집된 데이터는 **On-Device AI를 통해 현장에서 즉시 분석·판단**되어  
+- PLC 또는 액추에이터 제어로 바로 연결됩니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
@@ -93,9 +98,9 @@ PLC 및 액추에이터를 직접 제어하는 **On-Device AI 제어 시스템**
 
 ## 🔷 3. Physical AI & On-Device Control (Communication · Edge Node · Arduino Platform)
 
-- 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**
-- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작 **(IoT Sensor, PLC / Actuator → On-Device AI → Edge Controller)**
-- **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code 제어 환경**
+- IoT PLC를 구성하고 확장하기 위한 **Physical AI 및 On-Device 제어 기술 플랫폼**입니다.
+- ESP32 및 Arduino 기반 보드를 활용하여 센서 데이터 처리, 통신, AI 판단, 장치 제어를 **클라우드 의존 없이 현장(Edge)에서 직접 구현**할 수 있도록 설계되었습니다.
+- **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 Edge 제어 루프로 동작하며, UI 기반 설정을 통해 **코드 작성 없이(No-Code)** 센서 조건과 제어 규칙을 구성할 수 있습니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
