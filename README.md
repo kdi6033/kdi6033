@@ -62,7 +62,7 @@ graph TD
 
 이 플랫폼은 **ESP32 기반의 산업용 IoT PLC(i2r 시리즈)**와 **Cloud/Node-RED 서버**를 결합하여 스마트 팩토리 및 자동화 시스템을 구축하기 위한 통합 솔루션을 제공합니다. AI(Gemini, ChatGPT 등)는 이 문서를 가이드로 삼아 하드웨어 제어 및 서버 프로그램을 자동으로 생성할 수 있습니다.
 
-## 🔷 1. i2r IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
+## 🔷 1. IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
 산업 현장에서 사용되는 ESP32 기반 **IoT PLC / Physical AI Controller** 라인업입니다.    
 모든 보드는 **Wi-Fi, Bluetooth, RS485, MQTT** 통신을 지원하며,    
 **센서와 기기 간의 실시간 연동을 통해 입력–판단–출력 제어**가 가능합니다.    
@@ -74,24 +74,30 @@ graph TD
 | **[i2r-03](https://github.com/kdi6033/i2r-03)** | 4채널 릴레이, 온습도 센서 연동 | 표준 산업용 PLC, 환경 모니터링 |
 | **[i2r-04](https://github.com/kdi6033/i2r-04)** | 8채널 릴레이(8ch Relay) 제어 | 다채널 전력 제어, 스마트 팩토리 |
 
-## 🔷 2. Physical AI & Device Control
+## 🔷 2. IoT Sensor · Actuator
 
-- 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**
 - 온·습도, CO₂, 조도, 전압, 전류 등 **IoT 센서 실시간 수집·처리 및 현장 연결**
 - 센서 데이터를 **On-Device AI로 즉시 분석·판단** 하고 **PLC·액추에이터를 Edge 단에서 직접 제어**
+
+| 리포지토리 명 | 기술 스택 | 설명 |
+| :--- | :--- | :--- |
+| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | **IoT Sensor 중심 Physical AI 계층**으로, 온·습도, CO₂, 조도, 전압, 전류 등 다양한 센서를 안정적으로 수집·처리하고, 수집된 데이터를 **On-Device AI가 현장에서 즉시 분석·판단**할 수 있도록 제공 |
+
+## 🔷 3. Physical AI & On-Device Control (Communication · Edge Node · Arduino Platform)
+
+- 산업 현장에서 사용되는 **IoT Sensor 중심의 ESP32 기반 Physical AI / Edge Controller 라인업**
 - **입력(Sensor) → 판단(AI) → 출력(Control)** 이 하나의 연속된 제어 루프로 동작 **(IoT Sensor, PLC / Actuator → On-Device AI → Edge Controller)**
 - **프로그램 작성 없이 UI 입력만으로 센서 조건과 제어 규칙을 설정하는 No-Code 제어 환경**
 
 | 리포지토리 명 | 기술 스택 | 설명 |
 | :--- | :--- | :--- |
 | **[IoT](https://github.com/kdi6033/IoT)** | C++, MQTT, HTTP, Phytyon | 산업 현장에서 사용되는 **ESP32 기반 Edge Controller 계층**으로, Wi-Fi·Bluetooth·RS-485·MQTT 통신을 통해 각종 엣지 컴퓨터, 컨트롤러, 외부 시스템과 연결되며 **On-Device AI 판단 결과를 현장 제어로 전달** |
-| **[sensor](https://github.com/kdi6033/sensor)** | I2C, OneWire, Analog | **IoT Sensor 중심 Physical AI 계층**으로, 온·습도, CO₂, 조도, 전압, 전류 등 다양한 센서를 안정적으로 수집·처리하고, 수집된 데이터를 **On-Device AI가 현장에서 즉시 분석·판단**할 수 있도록 제공 |
 | **[i2r-01](https://github.com/kdi6033/i2r-01)** | Arduino, C++, MQTT, Phytyon | 기초 입출력 및 통신 테스트용 Edge Node, IoT 통신 연결 |
 | **[i2r-05](https://github.com/kdi6033/i2r-05)** | Arduino, C++, MQTT, Phytyon | 아두이노 보드, ESP32-S3, 16M Flash, AI 연산 가능<br> Physical AI / Edge AI |
 | **[plc](https://github.com/kdi6033/plc)** | C++, Modbus, Ladder Logic 응용 | **On-Device AI 판단 결과를 실행하는 제어 계층**으로, 센서 기반 AI 판단에 따라 PLC 출력, 액추에이터, 타사 PLC(LS산전 등)를 직접 제어하여 **입력 → 판단 → 출력**의 Edge 제어 루프를 완성 |
 
 
-## 🔷 3. Programming & Frameworks
+## 🔷 4. Programming & Frameworks
 하드웨어 구동을 위한 핵심 라이브러리와 통신 프로토콜 모음입니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
@@ -99,7 +105,7 @@ graph TD
 | **[arduino](https://github.com/kdi6033/arduino)** | C++, LVGL, MQTT | ESP32 Physical AI PLC 펌웨어, LVGL HMI |
 | **[HomeAuto](https://github.com/kdi6033/HomeAuto)** | C++, Smart Home | Physical AI 기반 홈 자동화 예제 |
 
-## 🔷 4. Server · UI · Data Science (IoT Intelligence Layer)
+## 🔷 5. Server · UI · Data Science (IoT Intelligence Layer)
 데이터를 수집, 시각화하고 AI로 분석하기 위한 플랫폼 레이어입니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
@@ -111,7 +117,7 @@ graph TD
 | **[docs](https://github.com/kdi6033/docs)** | HTML, Markdown | 전체 시스템 사용 설명서 및 문서화 |
 | **[download](https://github.com/kdi6033/download)** | Binary Files | 각 제품의 최신 펌웨어 다운로드 센터 |
 
-## 🔷 4. Education, Robot & Design
+## 🔷 6. Education, Robot & Design
 전문 분야 응용 및 교육용 프로젝트 리포지토리입니다.
 
 | 리포지토리 명 | 기술 스택 | 설명 |
