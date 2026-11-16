@@ -32,28 +32,9 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 배포 시스템이 하나로 연결
 각 저장소에는 학생과 사용자가 **배울 내용**이 담겨 있고, 같은 자료를 **AI도 읽을 수 있도록** 핀 맵, MQTT 규격, 라이브러리, 예제로 정리해 두었습니다.  
 목표는 **AI가 이 자료를 읽고 i2r의 기술이 담긴 프로그램을 스스로 작성**하는 것입니다.
 
-```mermaid
-graph TD
-    %% Main Platform
-    MAIN["i2r Platform<br/>(github.com/kdi6033)"] --> FW["i2r 제품<br/>(Board FW)"]
-    MAIN --> CLOUD["Server / Cloud<br/>(React / API)"]
-    MAIN --> DOCS["Documentation"]
-
-    %% Firmware Branch
-    FW --> I01[i2r-01<br/>i2r-02<br/>i2r-03<br/>i2r-04<br/>i2r-05]
-    
-    %% Cloud Branch
-    CLOUD --> R1[dashboard-react<br/>api-node / python<br/>mqtt-bridge]
-
-    %% Download Center (Linked from FW)
-    I01 --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
-    R1 --> DL["Download / Distribution<br/>(github.com/kdi6033/download)"]
-
-    %% Styling
-    style MAIN fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
-    style FW fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
-    style DL fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
-```
+<div align="center">
+  <img src="images/i2r-platform-architecture.svg" alt="i2r Physical AI 플랫폼 아키텍처: i2r 제품·펌웨어(i2r-01~07, Otto 로봇), 서버·클라우드·AI(i2r.link, React, MQTT, Hugging Face), 문서·교육·AI 지식(CLAUDE.md, AGENTS.md, guide.md), 다운로드·무선 배포 센터(download)" width="880" />
+</div>
 
 # 🌐 kdi6033 IoT & AI 플랫폼 통합 설명서 (Unified Guide)
 
