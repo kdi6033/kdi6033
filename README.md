@@ -55,6 +55,40 @@ graph TD
     style DL fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
 ```
 
+**AI와 함께 배우고 만드는 흐름**
+
+```mermaid
+flowchart TD
+    USER["👩‍🎓 학생 · 사용자<br/>아이디어를 말로 설명"]
+    AI["🤖 AI 코딩 도우미<br/>(Claude Code 등)"]
+
+    subgraph KB["📚 i2r 저장소 · 사람이 배우고 AI가 읽는 자료"]
+        DOCS["문서 · 강의<br/>docs / teach-iot"]
+        SPEC["핀 맵 · MQTT 규격<br/>i2r / plc / sensor"]
+        LIB["라이브러리 · 예제<br/>arduino / otto"]
+    end
+
+    subgraph DEV["🔧 i2r 제품 · 실제 동작"]
+        BOARD["IoT PLC · 보드<br/>i2r-01 ~ i2r-05"]
+        ROBOT["교육용 로봇<br/>Otto"]
+    end
+
+    CLOUD["☁️ 서버 · 클라우드<br/>React / Node-RED / AWS"]
+    DL["📦 Download<br/>완성 펌웨어 배포"]
+
+    USER -->|배운다| KB
+    USER -->|요청한다| AI
+    AI -->|읽는다| KB
+    AI -->|프로그램 작성 · 업로드| DEV
+    DEV <-->|MQTT| CLOUD
+    DL -->|바로 설치| DEV
+
+    style USER fill:#FFF3E0,stroke:#FF9800,stroke-width:2px
+    style AI fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
+    style KB fill:#F5F5F5,stroke:#9E9E9E
+    style DEV fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
+```
+
 # 🌐 kdi6033 IoT & AI 플랫폼 통합 설명서 (Unified Guide)
 
 **Physical AI · On-Device AI · IoT PLC · Edge Control**
