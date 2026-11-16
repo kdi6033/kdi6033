@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=220&section=header&text=i2r%20AI%20IoT%20Platform&fontSize=50&animation=fadeIn&fontAlignY=38&desc=IoT%20·%20피지컬%20AI%20·%20온디바이스%20AI%20기반의%20스마트%20공장%20자동화%20솔루션&descAlignY=55&descAlign=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E88E5,100:43A047&height=220&section=header&text=i2r%20Physical%20AI&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%EB%A7%90%ED%95%98%EB%A9%B4%20AI%EA%B0%80%20%EB%A7%8C%EB%93%A4%EA%B3%A0%2C%20%EB%A1%9C%EB%B4%87%EA%B3%BC%20%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8C%9C%EC%9D%80%20%EC%8A%A4%EC%8A%A4%EB%A1%9C%20%EB%B0%B0%EC%9A%B4%EB%8B%A4&descSize=20&descAlignY=58" />
 </div>
 
 <div align="center">
