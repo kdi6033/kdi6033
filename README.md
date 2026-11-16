@@ -40,9 +40,9 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 배포 시스템이 하나로 연결
 
 **Physical AI · On-Device AI · IoT PLC · Edge Control**
 
-i2r은 **센서 → AI 판단 → 제어**를 하나의 Edge 루프로 묶은 **Physical AI 기반 IoT PLC 플랫폼**입니다.  
-센서 데이터는 클라우드와 연동하면서도, **판단과 제어는 현장(Edge)의 장치가 직접** 수행합니다.  
-산업 현장의 PLC와 액추에이터부터 교육용 로봇(Otto)까지, 아래 저장소에서 필요한 부분을 골라 사용할 수 있습니다.
+- i2r은 **센서 → AI 판단 → 제어**를 하나의 Edge 루프로 묶은 **Physical AI 기반 IoT PLC 플랫폼**입니다.
+- 센서 데이터는 클라우드와 연동하면서도, **판단과 제어는 현장(Edge)의 장치가 직접** 수행합니다.
+- 산업 현장의 PLC와 액추에이터부터 교육용 로봇(Otto)까지, 아래 저장소에서 필요한 부분을 골라 사용할 수 있습니다.
 
 ## 🔷 1. IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
 
