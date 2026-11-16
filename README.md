@@ -32,6 +32,9 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 배포 시스템이 하나로 연결
 각 저장소에는 학생과 사용자가 **배울 내용**이 담겨 있고, 같은 자료를 **AI도 읽을 수 있도록** 핀 맵, MQTT 규격, 라이브러리, 예제로 정리해 두었습니다.  
 목표는 **AI가 이 자료를 읽고 i2r의 기술이 담긴 프로그램을 스스로 작성**하는 것입니다.
 
+> 🤖 **AI에게 이렇게 요청하세요:** `https://raw.githubusercontent.com/kdi6033/kdi6033/main/llms.txt 읽고 i2r-03으로 온도 30도 넘으면 릴레이 1번 켜줘`  
+> AI가 [llms.txt](llms.txt)에서 제품에 맞는 문서를 찾아 읽고 코드를 작성합니다.
+
 <div align="center">
   <img src="images/i2r-platform-architecture.svg" alt="i2r Physical AI 플랫폼 아키텍처: i2r 제품·펌웨어(i2r-01~07, Otto 로봇), 서버·클라우드·AI(i2r.link, React, MQTT, Hugging Face), 문서·교육·AI 지식(CLAUDE.md, AGENTS.md, guide.md), 다운로드·무선 배포 센터(download)" width="880" />
 </div>
