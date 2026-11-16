@@ -36,15 +36,13 @@ i2r 플랫폼은 펌웨어, 서버, 문서, 배포 시스템이 하나로 연결
   <img src="images/i2r-platform-architecture.svg" alt="i2r Physical AI 플랫폼 아키텍처: i2r 제품·펌웨어(i2r-01~07, Otto 로봇), 서버·클라우드·AI(i2r.link, React, MQTT, Hugging Face), 문서·교육·AI 지식(CLAUDE.md, AGENTS.md, guide.md), 다운로드·무선 배포 센터(download)" width="880" />
 </div>
 
-# 🌐 kdi6033 IoT & AI 플랫폼 통합 설명서 (Unified Guide)
+## 🌐 i2r IoT & AI 플랫폼 통합 설명서 (Unified Guide)
 
 **Physical AI · On-Device AI · IoT PLC · Edge Control**
 
-i2r는 센서–AI–제어를 하나의 Edge 루프로 통합한  
-**Physical AI 기반 IoT PLC 플랫폼**입니다.  
-
-산업 현장에서 발생하는 센서 데이터를 **클라우드 연동하며, 현장(Edge)에서 즉시 분석·판단**하고,  
-PLC 및 액추에이터를 직접 제어하는 **On-Device AI 제어 시스템**을 제공합니다.
+i2r은 **센서 → AI 판단 → 제어**를 하나의 Edge 루프로 묶은 **Physical AI 기반 IoT PLC 플랫폼**입니다.  
+센서 데이터는 클라우드와 연동하면서도, **판단과 제어는 현장(Edge)의 장치가 직접** 수행합니다.  
+산업 현장의 PLC와 액추에이터부터 교육용 로봇(Otto)까지, 아래 저장소에서 필요한 부분을 골라 사용할 수 있습니다.
 
 ## 🔷 1. IoT PLC (Physical · On-Device AI · Edge Controller Lineup)
 
